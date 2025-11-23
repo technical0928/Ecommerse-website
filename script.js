@@ -1,0 +1,56 @@
+let menu=document.querySelector(".menu");
+let side=document.querySelector(".side");
+let heart=document.querySelector(".fa-heart");
+let eng=document.querySelector(".eng");
+let urdu=document.querySelector(".urdu");
+let hindi=document.querySelector(".hindi");
+let lang=document.querySelector(".lang");
+
+let khan=document.querySelector("#mq");
+let very=document.querySelector("#very");
+
+eng.addEventListener("click",function(){
+    lang.innerText="English ▾"
+});
+urdu.addEventListener("click",function(){
+    lang.innerText="Urdu ▾"
+});
+
+hindi.addEventListener("click",function(){
+    lang.innerText="Hindi ▾"
+});
+
+
+
+
+
+side.addEventListener("click",function(){
+    menu.classList.toggle("active");
+    
+});
+heart.addEventListener("click",function(){
+    this.style.color="red"
+});
+heart.addEventListener("dblclick",function(){
+    this.style.color="black"
+});
+    
+
+khan.addEventListener("mouseover",()=>{
+    khan.stop();
+});
+khan.addEventListener("mouseout",()=>{
+    khan.start();
+})
+
+
+
+very.addEventListener("mouseover",()=>{
+    very.stop();
+});
+very.addEventListener("mouseout",()=>{
+    very.start();
+})
+
+
+
